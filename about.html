@@ -22,7 +22,7 @@
 				</div>
 			</div>
 		</div>
-		<a href="" class="xia-box">
+		<a href="#lxzx" class="xia-box">
 			<div class="xia"></div>
 			<div class="xia"></div>
 			<div class="xia"></div>
@@ -32,14 +32,13 @@
 	<!-- 导航 -->
 	<nav class="fir">
 		<ul>
-			<li><a href="" class="sign"><img src="img/sign.png" alt=""></a></li>
+			<li><a href="" class="sign"><!-- <img src="img/sign.png" alt=""> -->N·Travel</a></li>
 			<li><a href="index.html">网站首页</a></li>
 			<li><a href="news.html">旅行资讯</a></li>
 			<li><a href="scense.html">景区风采</a></li>
 			<li><a href="active.html">活动专区</a></li>
 			<li><a href="about.html">关于我们</a></li>
-			<li><a href="look.html">景区随览</a></li>
-			<!-- <li><a href=""></a></li> -->
+			<!-- <li><a href="look.html">景区随览</a></li> -->
 		</ul>
 	</nav>
 	<nav class="sec">
@@ -51,6 +50,7 @@
 	</nav>
 	<!-- 导航结束 -->
 	<!-- 关于我们 -->
+	<a name="lxzx"></a>
 	<main>
 		<div class="title-box">
 			<h1>公司介绍</h1>
@@ -136,7 +136,7 @@
 						<div class="send">
 							<textarea type="text" name="massage" id="massage" required placeholder="Your Massage"></textarea>
 							<button type="submit" class="send-btn">
-								<div class="feiji-btn iconfont icon-feiji">N</div>
+								<div class="feiji-btn iconfont icon-feiji"></div>
 							</button>
 						</div>
 					</form>
@@ -171,13 +171,13 @@
 						<h2>关于我们</h2>
 						<p>电话：400-8299-329</p>
 						<p>地址：太原市小店区</p>
-						<p>关注：微信&nbsp;微博</p>
+						<!-- <p>关注：微信&nbsp;微博</p> -->
 					</div>
 					<div class="footer-content1">
 						<h2>关注我们</h2>
-						<p>电话：400-8299-329</p>
-						<p>地址：太原市小店区</p>
-						<p>关注：微信&nbsp;微博</p>
+						<p>微博：N·Travel</p>
+						<p>微信：N·Travel</p>
+						<!-- <p>关注：微信&nbsp;微博</p> -->
 					</div>
 				</div>
 			</div>
@@ -188,3 +188,17 @@
 	<!-- 底部结束 -->
 </body>
 </html>
+<script>
+	window.onload = function(){
+		let nav = document.querySelector('nav');
+		window.onscroll = function(){
+			var scrollTop = document.documentElement.scrollTop || document.body.scrollTop || window.scrollY || window.pageYOffset;
+			if(scrollTop > 1000){
+				nav.style.background = 'rgba(51,93,199,0)]';
+			}else{
+				nav.style.background = 'rgba(51,93,199,0.9)';
+			}
+			// console.log(scrollTop)
+		}
+	}
+</script>

@@ -2,7 +2,7 @@
 * @Author: lenovo
 * @Date:   2017-11-24 13:38:48
 * @Last Modified by:   lenovo
-* @Last Modified time: 2017-11-27 00:12:47
+* @Last Modified time: 2017-12-18 22:52:20
 */
 @import url('base.css');
 html,body{
@@ -13,7 +13,7 @@ html,body{
 header{
 	width: 100%;
 	height: 100%;
-	background:blue;
+	/* background:blue; */
 	position: relative;
 }
 .banner-box{
@@ -56,6 +56,7 @@ header{
     line-height: 1.1;
     font-size: 30px;
     color: #fff;
+    margin-top: 20px;
 }
 .xia-box{
 	display: block;
@@ -102,14 +103,18 @@ nav{
 	top: 0;
 	left: 0;
 	position: fixed;
-	z-index: 99;
-	background: rgba(51,93,199,0);
+	z-index: 999;
+	/* background: rgba(51,93,199,0); */
 }
 nav ul{
 	height: 100%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
+}
+.sign{
+	font-size: 34px;
+	text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.8);
 }
 .sign:hover{
 	border-bottom: 0;
@@ -155,7 +160,9 @@ nav ul a img{
 .title-box{
 	width: 100%;
 	padding: 5px;
-	margin: 20px auto;
+	margin: 0 auto; 
+	margin-top: 50px;
+	margin-bottom: 20px;
 }
 .title-box h1{
 	margin-bottom: 8px;
@@ -194,11 +201,11 @@ nav ul a img{
 	position: relative;
 }
 .service:hover{
-	background-color: #467afd;
+	/* background-color: #467afd; */
     box-shadow: 0px 8px 14px 0px rgba(35, 24, 21, 0.2);
 }
 .service:hover .service-p{
-	color: #fff;
+	/* color: #000; */
 }
 .service .iconfont{
 	width: 80px;
@@ -217,31 +224,31 @@ nav ul a img{
 	height: 40px;
 	opacity: 0;
 	transition: all 0.5s;
-	transform: rotate(90deg);
+	transform: rotate(120deg);
 }
 .service .iconfont::before{
 	right: 0;
 	bottom: 0;
-	border-right: 2px solid #fff;
-	border-bottom: 2px solid #fff;
+	border-right: 2px solid #000;
+	border-bottom: 2px solid #000;
 }
 .service .iconfont::after{
 	top: 0;
 	left: 0;
-	border-top: 2px solid #fff;
-	border-left: 2px solid #fff;
+	border-top: 2px solid #000;
+	border-left: 2px solid #000;
 }
 .service .iconfont span::before{
 	left: 0;
 	bottom: 0;
-	border-left: 2px solid #fff;
-	border-bottom: 2px solid #fff;
+	border-left: 2px solid #000;
+	border-bottom: 2px solid #000;
 }
 .service .iconfont span::after{
 	top: 0;
 	right: 0;
-	border-top: 2px solid #fff;
-	border-right: 2px solid #fff;
+	border-top: 2px solid #000;
+	border-right: 2px solid #000;
 }
 .service:hover .iconfont:before,.service:hover .iconfont:after,.service:hover .iconfont span:before,.service:hover .iconfont span:after{
 	width: 40px;
@@ -284,20 +291,28 @@ nav ul a img{
     transform: translateY(-30px);
 }
 .service:hover .jia{
-	border: 1px solid #fff;
-	color: #fff;
+	/* border: 1px solid #fff; */
+	/* color: #fff; */
 }
 .icon-magic{
 	font-size: 28px;
+	line-height: 80px;
+	color: #000;
 }
 .icon-yezi{
 	font-size: 28px;
+	line-height: 80px;
+	color: #000;
 }
 .icon-xiangji{
 	font-size: 22px;
+	line-height: 80px;
+	color: #000;
 }
 .icon-shezhi{
 	font-size: 24px;
+	line-height: 80px;
+	color: #000;
 }
 /* 旅行资讯结束 */
 /* 景区风采 */
@@ -372,6 +387,10 @@ nav ul a img{
 } */
 /* 景区风采结束 */
 /* 活动专区 */
+.hdzq-title{
+	margin-top: 0;
+	margin-bottom: 20px;
+}
 .title-box .hd-title{
 	color: #fff;
 }
@@ -557,11 +576,12 @@ hr{
 	border-color: rgba(255, 255, 255, 0.5);
 }
 .copy{
-	padding-bottom: 20px;
+	padding-bottom: 30px;
+	padding-top: 30px;
 	text-align: center;
 	font-size: 14px;
 	color: rgb(239, 239, 239);
-	text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+	/* text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8); */
 }
 /* 底部结束 */
 @media screen and (min-width:1200px){

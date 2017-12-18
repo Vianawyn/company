@@ -2,7 +2,7 @@
 * @Author: lenovo
 * @Date:   2017-11-24 13:38:48
 * @Last Modified by:   lenovo
-* @Last Modified time: 2017-11-27 00:15:48
+* @Last Modified time: 2017-12-18 22:59:20
 */
 @import url('base.css');
 html,body{
@@ -13,20 +13,20 @@ html,body{
 header{
 	width: 100%;
 	height: 100%;
-	background:blue;
+	/* background:blue; */
 	position: relative;
 }
 .banner-box{
 	width: 100%;
 	height: 100%;
-	background: url('../img/news-bg.jpg') no-repeat center center;
+	background: url('../img/jbbw1.jpg') no-repeat center center;
 	background-size: 1920px 1048px;
 }
 .banner{
 	width: 100%;
 	height: 100%;
     vertical-align: middle;
-	background: rgba(50, 92, 199, 0.8);
+	/* background: rgba(0, 0, 0, 0.5); */
 }
 .banner-con{
 	margin: 0 80px;
@@ -56,6 +56,7 @@ header{
     line-height: 1.1;
     font-size: 30px;
     color: #fff;
+    margin-top: 20px;
 }
 .xia-box{
 	display: block;
@@ -97,12 +98,12 @@ header{
 /* 导航 */
 nav{
 	width: 100%;
-	background: #467afd;
+	/* background: #467afd; */
 	position: absolute;
 	top: 0;
 	left: 0;
 	position: fixed;
-	z-index: 99;
+	z-index: 999;
 	/* background: rgba(51,93,199,0); */
 }
 nav ul{
@@ -110,6 +111,10 @@ nav ul{
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
+}
+.sign{
+	font-size: 34px;
+	text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.8);
 }
 .sign:hover{
 	border-bottom: 0;
@@ -408,7 +413,8 @@ hr{
 	border-color: rgba(255, 255, 255, 0.5);
 }
 .copy{
-	padding-bottom: 20px;
+	padding-bottom: 30px;
+	padding-top: 30px;
 	text-align: center;
 	font-size: 14px;
 	color: rgb(239, 239, 239);

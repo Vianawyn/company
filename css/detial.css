@@ -2,7 +2,7 @@
 * @Author: lenovo
 * @Date:   2017-11-24 13:38:48
 * @Last Modified by:   lenovo
-* @Last Modified time: 2017-11-26 23:50:37
+* @Last Modified time: 2017-12-18 23:48:01
 */
 @import url('base.css');
 html,body{
@@ -13,7 +13,7 @@ html,body{
 header{
 	width: 100%;
 	height: 100%;
-	background:blue;
+	/* background:blue; */
 	position: relative;
 }
 .banner-box{
@@ -56,6 +56,7 @@ header{
     line-height: 1.1;
     font-size: 30px;
     color: #fff;
+    margin-top: 20px;
 }
 .xia-box{
 	display: block;
@@ -102,14 +103,18 @@ nav{
 	top: 0;
 	left: 0;
 	position: fixed;
-	z-index: 99;
-	/* background: rgba(51,93,199,0); */
+	z-index: 999;
+	background: rgba(51,93,199,0.9)
 }
 nav ul{
 	height: 100%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
+}
+.sign{
+	font-size: 34px;
+	text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.8);
 }
 .sign:hover{
 	border-bottom: 0;
@@ -155,6 +160,7 @@ nav ul a img{
 main{
 	width: 70%;
 	margin: 0 auto;
+	margin-top: 200px;
 	padding-bottom: 10px;
     max-width: 960px;
     border: 1px solid #a7a7a7;
@@ -426,11 +432,12 @@ hr{
 	border-color: rgba(255, 255, 255, 0.5);
 }
 .copy{
-	padding-bottom: 20px;
+	padding-bottom: 30px;
+	padding-top: 30px;
 	text-align: center;
 	font-size: 14px;
 	color: rgb(239, 239, 239);
-	text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+	/* text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8); */
 }
 /* 底部结束 */
 @media screen and (min-width:1200px){
